@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Map Diary"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dokumentiere dein Leben"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PIN ändern"
+        android:id="@+id/textView8"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView7"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textVisiblePassword"
+        android:layout_marginTop="20dp"
+        android:text="Altes Passwort"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textVisiblePassword"
+        android:text="Neues Passwort"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textVisiblePassword"
+        android:text="Neues Passwort bestätigen"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PIN speichern"
+        android:id="@+id/button4"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/editText4"
+        android:layout_alignEnd="@+id/textView6" />
+
+</RelativeLayout>
