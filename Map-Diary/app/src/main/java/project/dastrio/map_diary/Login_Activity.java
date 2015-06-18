@@ -5,11 +5,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.gms.common.api.GoogleApiClient;
+
+import java.util.Map;
+
 
 public class Login_Activity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        GoogleApiClient mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .addApi()
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
